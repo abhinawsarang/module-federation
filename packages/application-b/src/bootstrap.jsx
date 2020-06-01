@@ -1,14 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
-import SayHelloFromA from 'application_a/SayHelloFromA';
+import { AppB } from "./app";
 
-import App from './app';
-
-ReactDOM.render(
-  <>
-    <App />
-    <SayHelloFromA />
-  </>,
-  document.getElementById('root')
-);
+ReactDOM.render(<AppB />, document.getElementById("root"));
